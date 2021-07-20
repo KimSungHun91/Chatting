@@ -1,0 +1,61 @@
+package Server;
+
+public interface IProtocol {
+	// response
+	public static final int RES_LOGIN_OK = 10100;
+	public static final int RES_UPDATE_WAITROOM_USER = 10101;
+	public static final int RES_LOGIN_NO = 10102;
+	public static final int RES_SEARCH_ROOM = 10110;
+	public static final int RES_SUCCESS_MAKE_UPDATE_ROOM = 10120;
+	public static final int RES_REMOVEUSER_WAITROOM = 10121;
+	public static final int RES_UPDATE_ROOM_LIST = 10125;
+	public static final int RES_UPDATE_WAITROOM_ROOMLIST = 10126;
+	public static final int RES_ENTER_ROOM = 10130;
+	public static final int RES_UPDATE_USER = 10131;
+	public static final int RES_ENTER_ROOM_FAIL1 = 10132;
+	public static final int RES_ENTER_ROOM_FAIL2 = 10133;
+	public static final int RES_ENTER_ROOM_FAIL3 = 10134;
+	public static final int RES_WAIT_CHAT = 10140;
+	public static final int RES_ALL_USER = 10150;
+	public static final int RES_FIND_USER = 10155;
+	public static final int RES_PERSONAL_CHAT_USERLIST = 10160;
+	public static final int RES_PERSONAL_CHAT_ME = 10165;
+	public static final int RES_PERSONAL_CHAT_YOU = 10166;
+	public static final int RES_EXIT_PROGRAM = 10180;
+	public static final int RES_WAIT_USER_DELETE = 10181;
+	public static final int RES_ROOM_CHAT = 10190;
+	public static final int RES_INVITE_CONFIRM = 10200;
+	public static final int RES_INVITE_ACCEPT = 10205;
+	public static final int RES_ADD_ROOM_USER = 10206;
+	public static final int RES_INVITE_FAIL = 10207;
+	public static final int RES_INVITE_DENY = 10208;
+	public static final int RES_BAN_USER = 10210;
+	public static final int RES_MINUS_USER = 10211;
+	public static final int RES_CHANGE_LEADER = 10220;
+	public static final int RES_UPDATE_LEADER = 10221;
+	public static final int RES_EXIT_ROOM = 10230;
+	public static final int RES_UPDATEROOM_OUTMSG = 10231;
+	public static final int RES_ADDUSER_UPDATEROOM = 10232;
+	public static final int RES_LEADER_OUT_ROOM = 10233;
+	public static final int RES_LEADER_OUT_WAITROOM = 10234;
+	// request
+	public static final int REQ_LOGIN = 100;
+	public static final int REQ_FIND_ROOM = 110;
+	public static final int REQ_MAKE_ROOM = 120;
+	public static final int REQ_SETTING_ROOM = 125;
+	public static final int REQ_ENTER_ROOM = 130;
+	public static final int REQ_WAIT_CHAT = 140;
+	public static final int REQ_ALL_USER = 150;
+	public static final int REQ_FIND_USER = 155;
+	public static final int REQ_PERSONAL_CHAT_USERLIST = 160;
+	public static final int REQ_PERSONAL_CHAT = 165;
+	public static final int REQ_EXIT_PROGRAM = 180;
+	public static final int REQ_ROOM_CHAT = 190;
+	public static final int REQ_INVITE_USER = 200;
+	public static final int REQ_INVITE_ACCEPT = 205;
+	public static final int REQ_INVITE_DENY = 207;
+	public static final int REQ_BAN_USER = 210;
+	public static final int REQ_CHANGE_LEADER = 220;
+	public static final int REQ_EXIT_ROOM = 230;
+	public static final int REQ_EXIT_LEADER = 240;
+}
